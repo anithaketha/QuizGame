@@ -11,7 +11,10 @@
   <div class="container"> 
     <div id="player-setup">
     <form id="playerForm">
+        <p>Enter player 1 Name: </p>
       <input type="text" id="player1" placeholder="Player 1 Name" required />
+      <p>Enter player 2 Name: </p>
+
       <input type="text" id="player2" placeholder="Player 2 Name" required />
       <button type="submit">Start Game</button>
     </form>
@@ -25,9 +28,11 @@
   </div>
 
   <div id="question-container" class ="container" style="display: none;">
+    <h3 id="turnIndicator"></h3>
+
   <div class="question-container">
-    <div id="question"></div>
-    <div id="options" ></div>
+    <h4 id="question"></h4>
+    <div id="options" class="options-container"></div>
     </div>  
     <button id="nextBtn" style="display: none;">Next Question</button>
   </div>

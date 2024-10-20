@@ -12,7 +12,9 @@ h1 {
     padding: 20px;
     text-align: center;
 }
-
+p{
+    text-align: left;
+}
 .container {
     display: flex;
     justify-content: center;
@@ -33,10 +35,14 @@ input {
 }
 
 #player-setup, #category-selection, #question-container, #result {
-    margin: 20px auto;
+    margin: 2px auto;
     width: 300px;
 }
-
+#turnIndicator{
+    background-color:#E6D9A2 ;
+    width: 100%;
+    padding:10px;
+}
 button {
     background-color: #4CAF50;
     color: white;
@@ -52,24 +58,38 @@ button:hover {
 
 #question, #options {
     /* margin-top: 20px; */
-    margin:10px 10px 10px 10px;
+    margin:0 5px 5px 5px;
 }
 
 .question-container {
-    background-color: #E6D9A2;
+    /* background-color: #E6D9A2; */
     width: 100%;
     padding: 20px;
     text-align: center; 
 }
 
-#question-container {
+/* #question-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+} */
+.options-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .optionButton{
-    margin:20px 15px 10px 15px;
+width: 50%;
 
 
+
+}
+.result-container{
+    text-align: center;
+    border:1px solid black;
+    padding:30px;
+    background-color:wheat;
 }
